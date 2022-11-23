@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME WORK_02 반응형 웹 만들기</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./homework.css">
+    <style>
+        body {
+            height: 200vh;
+
+        }
+
+        .mopen {
+            display: none;
+        }
+
+        .mainVisual {
+            position: relative;
+            height: 100vh;
+            background: url(./img/m05.jpg) no-repeat center center/cover;
+        }
+
+        .mainVisual .inner {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 1200px;
+            transform: translate(-50%, -50%);
+        }
+
+        .mainVisual .inner h2 {
+            font-size: 50px;
+            margin: 0 0 10px 0;
+            color: #fff;
+        }
+
+        .mainVisual .inner p {
+            font-size: 15px;
+            color: #fff;
+        }
+
+        @media (max-width: 768px) {
+            .mopen {
+                position: fixed;
+                top: 30px;
+                right: 30px;
+                display: block;
+            }
+
+            .mainVisual {
+                position: relative;
+                height: 100vh;
+                background: url(./img/m05.jpg) no-repeat center center/cover;
+            }
+
+            .mainVisual .inner {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 100%;
+                transform: translate(-50%, -50%);
+                padding: 0 15px;
+            }
+
+            .mainVisual .inner h2 {
+                font-size: 5vw;
+                margin: 0 0 10px 0;
+                color: #fff;
+            }
+
+            .mainVisual .inner p {
+                font-size: 15px;
+                color: #fff;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="mainVisual">
+        <div class="inner">
+            <h2>Lorem ipsum dolor sit.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Cumque nemo sint ipsa soluta vitae modi magni totam nulla?</p>
+        </div>
+    </section>
+    <section class="content">
+        <div class="inner">
+            <h2>Lorem ipsum dolor sit.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Cumque nemo sint ipsa soluta vitae modi magni totam nulla?</p>
+        </div>
+    </section>
+
+    <button class="mopen">
+        <i class="xi-bars"></i>
+    </button>
+
+    <div class="bg"></div>
+</body>
+
+</html>

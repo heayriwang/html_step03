@@ -1,0 +1,10 @@
+.bg {
+    position: relative;
+    height: 500px;
+    background: url(./img/m04.jpg) no-repeat fixed center center/cover;
+    margin: 10px 10px 10px;
+}
+
+h2 {
+    font-size: 5vw;
+}
